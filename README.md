@@ -1,9 +1,5 @@
 <h1>Active Directory - Home Lab</h1>
 
-<h1>Youtube in depth demonstration</h1> 
-
-[https://www.youtube.com/@CySeb9](https://youtu.be/vu5Y0v-0DhQ?si=y6r8eKvjTclps-F6)
-
 <h2>Description</h2>
 In this lab I will walk you through how to create an Active Directory home lab environment using Oracle Virtual Box. Through the configuration and operating of this lab we will understand how Active Directory and Windows networking works.
 <br />
@@ -28,11 +24,11 @@ In this lab I will walk you through how to create an Active Directory home lab e
 <h2>Setting up the Virtual Machine:</h2>
 <p align="center">
 Creating a new Virtual Machine. Add 4096 MB, 2 processors and 50gb of virtual hard disk space then finish: <br/>
-<img src="https://i.imgur.com/R8ZSYZU.png" height="60%" width="60%" alt=""/>
+<img src="https://i.imgur.com/9awRij6.png" height="60%" width="60%" alt=""/>
 <br />
 <br />
 Once finished go to settings, general > advanced and enable bidirectional. Then go to Network > Adapter 2 and attach to internal network: <br/>
-<img src="https://i.imgur.com/leWPPv2.png" height="60%" width="60%" alt=""/> <img src="https://i.imgur.com/e5cRrIS.png" height="60%" width="60%" alt=""/>
+<img src="https://i.imgur.com/DCRjqrr.png" height="60%" width="60%" alt=""/> <img src="https://i.imgur.com/7k0u3Kq.png" height="60%" width="60%" alt=""/>
 <br />
 <br />
 Start virtual machine and go through setup. Click custom, select the drive then wait for installation. Select Desktop Experience: <br/>
@@ -176,7 +172,7 @@ Right click mydomain.com > New > Organizational Unit. Insert the following:<br/>
 <br />
 <br />
 Right click on the new _ADMINS folder we created > New > User. Fill out the boxes with your information. For user logon name, include 'a-firstnameinitiallastname':<br/>
-<img src="https://i.imgur.com/WjDVFie.png" height="60%" width="60%" alt=""/>
+<img src="" height="60%" width="60%" alt=""/>
 <br />
 <br />
 Include the password with 'Password never expires':<br/>
@@ -184,15 +180,15 @@ Include the password with 'Password never expires':<br/>
 <br />
 <br />
 Once done you should get the following confirmation:<br/>
-<img src="https://i.imgur.com/U7lkHkT.png" height="60%" width="60%" alt=""/>
+<img src="" height="60%" width="60%" alt=""/>
 <br />
 <br />
 Right click on the new user we created in the _ADMINS folder > Properties:<br/>
-<img src="https://i.imgur.com/ZjeAWxp.png" height="60%" width="60%" alt=""/>
+<img src="" height="60%" width="60%" alt=""/>
 <br />
 <br />
 In Properties go to Member of, click Add. In the box, enter in 'Domain Admins' then 'Check Names' it should be underlined. Then click Ok:<br/>
-<img src="https://i.imgur.com/Egp2yaM.png" height="60%" width="60%" alt=""/>
+<img src="" height="60%" width="60%" alt=""/>
 <br />
 <br />
 Log in with the new account:<br/>
@@ -215,11 +211,11 @@ Once the script is done, we can go to Active Directory Users and Computers and s
 <h2>Installing and Configuring the Windows 10 Client:</h2>
 <p align="center"> 
 Create a new virtual machine in Oraclebox following the same setup we did when we created our Domain Controller. Use the Windows 10 iso for this:<br/>
-<img src="https://i.imgur.com/ed4py66.png" height="60%" width="60%" alt=""/>
+<img src="https://i.imgur.com/9awRij6.png" height="60%" width="60%" alt=""/>
 <br />
 <br />
 On the settings for the client, go to Network > Adapter 1 and attach it to an internal network:<br/>
-<img src="https://i.imgur.com/PXFnUSQ.png" height="60%" width="60%" alt=""/>
+<img src="https://i.imgur.com/7k0u3Kq.png" height="60%" width="60%" alt=""/>
 <br />
 <br />
 Start the machine and go through installation. Make sure to select 'I dont have a product key':<br/>
@@ -263,11 +259,11 @@ Join the domain with our admin account we made before:<br/>
 <br />
 <br />
 We then get the confirmation that we joined the domain and the client will restart:<br/>
-<img src="https://i.imgur.com/OhCoGuP.png" height="60%" width="60%" alt=""/>
+<img src="" height="60%" width="60%" alt=""/>
 <br />
 <br />
 Log in with our dedicated admin account:<br/>
-<img src="https://i.imgur.com/EfA93YU.png" height="60%" width="60%" alt=""/>
+<img src="" height="60%" width="60%" alt=""/>
 <br />
 <br />
 </p>
